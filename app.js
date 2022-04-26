@@ -18,6 +18,7 @@ searchUser.addEventListener('keyup',(e)=>{
             //console.log(data);
             if (data.profile.message === 'Not Found') {
                 //show alert
+                ui.showAlert('User Not Found','alert alert-danger');
                 
             }
             else{
@@ -26,5 +27,9 @@ searchUser.addEventListener('keyup',(e)=>{
             }
         })
         
+    }
+    else{
+        //clear profile
+        ui.clearProfile();
     }
 });
